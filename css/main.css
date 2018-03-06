@@ -1,0 +1,41 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #000;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  /* Set your content font stack here: */
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1em;
+  margin-top: 0;
+}
+
+.header, .content {
+  width: 748px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+@media (max-width: 748px) {
+  .header, .content {
+    width: 95%;
+    padding: 12px;
+  }
+}
+
+img {
+  display: block;
+  margin: 32px auto;
+}
+
+img.hidden {
+  visibility: hidden;
+}

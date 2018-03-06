@@ -9,77 +9,42 @@
 
     -->
   <head>
-    <style>
-      body {
-        font-family: Helvetica, Arial, sans-serif;
-        background: #000;
-        font-size: 16px;
-        line-height: 1.5em;
-      }
-
-      h1 {
-        font-size: 64px;
-        line-height: 1em;
-        margin-top: 0;
-      }
-
-      .h-event {
-        background: #fff;
-        width: 748px;
-        margin: 0 auto;
-        padding: 12px;
-      }
-
-      @media (max-width: 748px) {
-        .h-event {
-          width: 95%;
-          padding: 12px;
-        }
-      }
-
-      img {
-        display: block;
-        margin: 32px auto;
-      }
-
-      img.hidden {
-        visibility: hidden;
-      }
-    </style>
+    <link href='/css/base-min.css' rel='stylesheet' />
+    <link href='/css/main.css' rel='stylesheet' />
   </head>
   <body>
-    <div class="h-event">
-      <h1 class="p-name">baltimore code and coffee</h1>
+    <div id='main' class="h-event">
+      <div class="header">
+        <h1 class="p-name">baltimore code and coffee</h1>
+      </div>
 
-      <p>
-        Next meetup: <a href="https://calendar.google.com/calendar/ical/9eib43jkpg2rhnl53nphm0vjqc%40group.calendar.google.com/public/basic.ics">
-          <time class="dt-start" datetime="2013-06-30 12:00">March 30<sup>th</sup>, 2018. 9:00am</time>
-        </a>
-      </p>
+      <div class="content">
+        <p>
+          Next meetup is <a href="https://calendar.google.com/calendar/ical/9eib43jkpg2rhnl53nphm0vjqc%40group.calendar.google.com/public/basic.ics">
+            <time class="dt-start" datetime="2013-06-30 12:00">March 30<sup>th</sup>, 2018. 9:00am</time>
+          </a> at
+          <span class="p-location">
+            <a href="http://www.openworksbmore.com/">Open Works Baltimore, 1400 Greenmount Ave, Baltimore, MD 21202</a>
+          </span>
+        </p>
 
-      <p>
-        <span class="p-location">
-          <a href="http://www.openworksbmore.com/">Open Works Baltimore<br />
-          1400 Greenmount Ave, Baltimore, MD 21202</a>
-        </span>
-      </p>
+        <p class="p-summary">
+          Get together with computer people in Baltimore, drink coffee, talk
+          about and/or write code. We have no particular agenda, we're all
+          just doing the best we can.
+        </p>
 
-      <p class="p-summary">Get together with computer people in Baltimore, drink coffee, talk about and/or write code.</p>
+        <img id='dancer' class='pure-img' src='dancer.png' />
 
-      <img id='dancer' src='dancer.png' />
+        <p>
+          <a href='https://twitter.com/BrigitteWarner'>Brigitte</a> and
+          <a href='https://twitter.com/abachman'>Adam</a> claim full
+          responsibility for this. Get in touch!
+        </p>
 
-      <script>
-        var dance = false
-        function doadance(evt) {
-          evt.preventDefault()
-          dance = !dance
-          if (dance) evt.target.src = 'dancer.gif'
-          else evt.target.src = 'dancer.png'
-        }
-        var dancer = document.querySelector('#dancer')
-        dancer.addEventListener('click', doadance)
-        dancer.addEventListener('touchend', doadance)
-      </script>
+      </div>
     </div>
+
+    <script src='/js/main.js' type='text/javascript'></script>
   </body>
 </html>
