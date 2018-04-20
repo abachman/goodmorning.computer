@@ -12,9 +12,12 @@ html, button, input, select, textarea,
 }
 
 h1 {
-  font-size: 550%;
+  font-size: 450%;
   line-height: 1em;
   margin: 0;
+  padding: 32px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 a {
@@ -34,13 +37,13 @@ a:hover {
   width: 748px;
   background: #fff;
   margin: 0 auto;
-  padding: 12px;
+  padding: 16px 24px;
 }
 
 @media (max-width: 748px) {
   .header, .content {
     width: 95%;
-    padding: 12px;
+    padding: 16px 24px;
   }
 }
 
